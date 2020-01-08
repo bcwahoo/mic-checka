@@ -5,21 +5,21 @@ import store from '../redux/store';
 import { onLogout } from '../redux/actions';
 
 export default {
-    // Gets all books
-    getBooks: function () {
-        return axiosP.get("/books");
+    // Gets all albums
+    getAlbums: function () {
+        return axiosP.get("/albums");
     },
-    // Gets the book with the given id
-    getBook: function (id) {
-        return axiosP.get("/books/" + id);
+    // Gets the album with the given id
+    getAlbum: function (id) {
+        return axiosP.get("/albums/" + id);
     },
-    // Deletes the book with the given id
-    deleteBook: function (id) {
-        return axiosP.delete("/books/" + id);
+    // Deletes the album with the given id
+    deleteAlbum: function (id) {
+        return axiosP.delete("/albums/" + id);
     },
-    // Saves a book to the database
-    saveBook: function (bookData) {
-        return axiosP.post("/books", bookData);
+    // Saves a album to the database
+    saveAlbum: function (albumData) {
+        return axiosP.post("/albums", albumData);
     }
 };
 
